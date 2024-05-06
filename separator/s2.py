@@ -9,7 +9,7 @@ class MusicSeparationApp:
         self.master = master
         self.master.title("Music Separation App")
 
-        self.model = openunmix.openunmix()
+        self.model = openunmix.umxl()
 
         self.load_button = tk.Button(self.master, text="Load Music File", command=self.load_music_file)
         self.load_button.pack()

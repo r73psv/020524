@@ -16,7 +16,7 @@ use_cuda = torch.cuda.is_available()
 device = torch.device("cuda" if use_cuda else "cpu")
 
 # Путь к вашему WAV или MP3 файлу
-audio_file_path = "23941.wav"  # Измените на путь к вашему файлу
+audio_file_path = "mix.mp3"  # Измените на путь к вашему файлу
 
 # Загрузка аудиофайла с помощью torchaudio
 waveform, sample_rate = torchaudio.load(audio_file_path, normalize=True)

@@ -5,15 +5,15 @@ import scipy.io.wavfile as wav
 from torchaudio.pipelines import HDEMUCS_HIGH_MUSDB_PLUS
 
 # Load the Demucs model
-# model = demucs.load_model()
-bundle = HDEMUCS_HIGH_MUSDB_PLUS
+model = HDEMUCS_HIGH_MUSDB_PLUS.get_model()
+#bundle = HDEMUCS_HIGH_MUSDB_PLUS
+#model = bundle.get_model()
 
-model = bundle.get_model()
 # Create a Streamlit web app
 st.title("Music Separator App")
 
 # Upload a music file
-uploaded_file = st.file_uploader("Upload a music file", type=["wav"])
+uploaded_file = st.file_uploader("mix.mp3", type=["wav"])
 
 if uploaded_file is not None:
     audio_data = uploaded_file.read()

@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3cb2d-3507-4f7e-ab18-a0b0ee487a33" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/djangoProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/separator/23941.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/separator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/separator/s1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/separator/s2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/separator/s3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/separator/s4.py" afterDir="false" />
+    <list default="true" id="47b3cb2d-3507-4f7e-ab18-a0b0ee487a33" name="Changes" comment="first">
+      <change afterPath="$PROJECT_DIR$/separator/mix.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/separator/musicgen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/separator/s6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/separator/vocal.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/separator/s1.py" beforeDir="false" afterPath="$PROJECT_DIR$/separator/s1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/separator/s2.py" beforeDir="false" afterPath="$PROJECT_DIR$/separator/s2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/separator/s4.py" beforeDir="false" afterPath="$PROJECT_DIR$/separator/s4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +43,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.musicgen.executor": "Run",
+    "Python.predict.executor": "Run",
     "Python.s1.executor": "Run",
     "Python.s2.executor": "Run",
     "Python.s3.executor": "Run",
     "Python.s4.executor": "Run",
+    "Python.s6.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
@@ -60,6 +59,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,8 +67,34 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\r73ps\PycharmProjects\djangoProject\separator" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\r73ps\PycharmProjects\djangoProject\separator" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.s3">
+    <configuration name="musicgen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="djangoProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/separator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/separator/musicgen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="s1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="djangoProject" />
       <option name="ENV_FILES" value="" />
@@ -138,7 +164,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="s4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="s6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="djangoProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,7 +178,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/separator/s4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/separator/s6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,9 +190,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.s3" />
-        <item itemvalue="Python.s4" />
         <item itemvalue="Python.s2" />
         <item itemvalue="Python.s1" />
+        <item itemvalue="Python.musicgen" />
+        <item itemvalue="Python.s6" />
       </list>
     </recent_temporary>
   </component>
@@ -186,8 +213,29 @@
       <option name="presentableId" value="Default" />
       <updated>1714635163726</updated>
       <workItem from="1714635276777" duration="5961000" />
-      <workItem from="1714642952643" duration="8738000" />
+      <workItem from="1714642952643" duration="10386000" />
+      <workItem from="1714710184092" duration="12334000" />
+      <workItem from="1714968237124" duration="6061000" />
+      <workItem from="1714987780879" duration="1831000" />
+      <workItem from="1714997345895" duration="1362000" />
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <option name="closed" value="true" />
+      <created>1714652469696</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714652469696</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first">
+      <option name="closed" value="true" />
+      <created>1714652479403</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714652479403</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,11 +254,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/djangoProject$s2.coverage" NAME="s2 Coverage Results" MODIFIED="1714641456047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/separator" />
+    <SUITE FILE_PATH="coverage/djangoProject$predict.coverage" NAME="predict Coverage Results" MODIFIED="1714726698200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/separator" />
+    <SUITE FILE_PATH="coverage/djangoProject$musicgen.coverage" NAME="musicgen Coverage Results" MODIFIED="1714971098116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/separator" />
+    <SUITE FILE_PATH="coverage/djangoProject$s2.coverage" NAME="s2 Coverage Results" MODIFIED="1714999025747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/separator" />
     <SUITE FILE_PATH="coverage/djangoProject$s4.coverage" NAME="s4 Coverage Results" MODIFIED="1714647703387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/separator" />
-    <SUITE FILE_PATH="coverage/djangoProject$s3.coverage" NAME="s3 Coverage Results" MODIFIED="1714652069151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/separator" />
-    <SUITE FILE_PATH="coverage/djangoProject$s1.coverage" NAME="s1 Coverage Results" MODIFIED="1714640329313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/separator" />
+    <SUITE FILE_PATH="coverage/djangoProject$s6.coverage" NAME="s6 Coverage Results" MODIFIED="1714970948089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/separator" />
+    <SUITE FILE_PATH="coverage/djangoProject$s3.coverage" NAME="s3 Coverage Results" MODIFIED="1714999097535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/separator" />
+    <SUITE FILE_PATH="coverage/djangoProject$s1.coverage" NAME="s1 Coverage Results" MODIFIED="1714998993021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/separator" />
   </component>
 </project>
